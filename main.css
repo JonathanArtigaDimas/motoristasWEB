@@ -1,0 +1,78 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+#Cuerpo{
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-image: url("./img/barcoenAcajutlaOscuro.jpg");
+  background-size: cover;
+  
+}
+
+.configTextoh3{
+  font-size: 3rem;
+}
+
+.configBtn{
+  width: 15%;
+  margin-top: 1%;
+}
+
+#contenedor{
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  
+}
+#Formulario{
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.configInput{
+  width: 70%;
+  border: none;
+  border-radius: 20px;
+  padding: 15px;
+  margin-left: 15%;
+  margin-bottom: 5%;
+  background-color: rgba(255, 255, 255, 0.70);
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+.configLabel{
+  margin-left: 17%;
+  background: none;
+}
+
+@media screen and (max-width: 768px) {
+  .configTextoh3{
+    font-size: 1.5rem;
+    padding-bottom: 7%;
+  }
+  .configBtn{
+    width: 20%;
+    margin-top: 14%;
+  }
+  .configInput{
+    width: 70%;
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    margin-left: 15%;
+    margin-bottom: 5%;
+    background-color: rgba(255, 255, 255, 0.70);
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    transition: all 0.3s ease;
+  }
+}
