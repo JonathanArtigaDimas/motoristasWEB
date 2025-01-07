@@ -36,7 +36,7 @@
                       </div>
                     </div>
                   </div>
-                  <form autocomplete="off" method="POST" action="formulario.php">
+                  <form autocomplete="off" method="POST">
                     <div class="row gy-3 overflow-hidden">
                       <div class="col-12">
                         <div class="form-floating mb-3">
@@ -50,9 +50,10 @@
                           <label for="password" class="form-label">Contraseña</label>
                         </div>
                       </div>
+                      
                       <div class="col-12">
                         <div class="d-grid">
-                          <button class="btn btn-dark btn-lg" type="submit" name="send1">Iniciar Sesión</button>
+                          <button class="btn btn-dark btn-lg" type="submit" name="send1" id="loginButton">Iniciar Sesión</button>
                         </div>
                       </div>
                     </div>

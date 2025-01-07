@@ -1,4 +1,44 @@
 <?php
+
+
+include("conexion.php");
+
+if(isset($_POST['send1'])){
+
+    $nUsuario = $_POST['userName'];
+    $nContraseña = $_POST['passwordUser'];
+    $query = mysqli_query($conex, "SELECT * from user WHERE userName= '$nUsuario' ");
+    $no = mysqli_num_rows($query);
+    if($no>0)
+    {
+        $data = mysqli_fetch_assoc($query);
+        if($data['passwordUser']==$nContraseña)
+        {
+            echo 'Ingresado correctamente';
+            header("Location:formulario.php");
+        }
+        else
+        {
+            echo 'Contraseña incorrecta.';
+        }
+    }
+    else
+        {
+            echo 'Usuario incorrecto';
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
         session_start();
     include("conexion.php");
 
@@ -28,7 +68,7 @@
                 if(password_verify($nContraseña,$hash_passwordUser)){
                     $_SESSION['userName'] = $nUsuario;
                     $_SESSION['id'] = $row['id'];
-
+                    print("INICIO CORRECTO");
                     header("Location:formulario.php");
                     exit();
                 }
@@ -39,7 +79,7 @@
 
 
 
-
+ */
 
 
 ?>

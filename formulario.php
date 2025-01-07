@@ -10,7 +10,7 @@
 </head>
 <body id="Cuerpo">
 <div id="contenedor"class="w-100">
-  <form autocomplete="off" method="POST" id="Formulario" class="w-100">
+  <form method="POST" id="Formulario" class="w-100">
   
     
   <div id="carouselExampleIndicators" class="carousel slide w-100 justify-content-center align-items-center">
@@ -24,7 +24,7 @@
     <div class="carousel-item active">
     <h3 class="text-white text-center mb-5 mt-5 configTextoh3"> Ingrese su nombre</h3>
       <div class="form-floating mb-3">
-        <input type="text" name="nombreMotorista" class="form-control configInput" id="floatingInput">
+        <input type="text" name="nombreMotorista" class="form-control configInput UPtext" id="floatingInput">
         <label class="configLabel" for="floatingInput">Ejemplo: GERARDO RUIZ</label>
       </div>
     </div>
@@ -32,7 +32,7 @@
     <div class="carousel-item">
     <h3 class="text-white text-center mb-5 mt-5 configTextoh3"> Ingrese el nombre del barco</h3>
       <div class="form-floating mb-3">
-        <input type="text" name="nombreBarco" class="form-control configInput" id="floatingInput" >
+        <input type="text" name="nombreBarco" class="form-control configInput UPtext" id="floatingInput" >
         <label class="configLabel" for="floatingInput">Ejemplo: MSCMONSERRAT, TIFFANY </label>
       </div>
     </div>
@@ -48,7 +48,7 @@
     <div class="carousel-item">
     <h3 class="text-white text-center mb-5 mt-5 configTextoh3"> Ingrese el dueño del camión</h3>
       <div class="form-floating mb-3">
-        <input type="text" name="nombreDueñoCamion" class="form-control configInput" id="floatingInput" value="SOLUCIONESLEGALESA&A S.A. DE C.V.">
+        <input type="text" name="nombreDueñoCamion" class="form-control configInput UPtext" id="floatingInput" value="SOLUCIONESLEGALESA&A S.A. DE C.V.">
         <label class="configLabel" for="floatingInput">Nombre del dueño.</label>
       </div>
     </div>
@@ -72,7 +72,7 @@
     <div class="carousel-item">
     <h3 class="text-white text-center mb-5 mt-5 configTextoh3"> Ingrese el nombre del contenedor.</h3>
       <div class="form-floating mb-3">
-        <input type="text" name="nombreContenedor" class="form-control configInput" id="floatingInput">
+        <input type="text" name="nombreContenedor" class="form-control configInput UPtext" id="floatingInput">
         <label class="configLabel" for="floatingInput">Ejemplo: TEMU, MSKU, OMAU, MCAU</label>
       </div>
     </div>
@@ -96,7 +96,7 @@
     <div class="carousel-item">
     <h3 class="text-white text-center mb-5 mt-5 configTextoh3"> Ingrese el tipo de viaje.</h3>
       <div class="form-floating mb-3">
-        <input type="text" name="tipoDeViaje" class="form-control configInput" id="floatingInput">
+        <input type="text" name="tipoDeViaje" class="form-control configInput UPtext" id="floatingInput">
         <label class="configLabel" for="floatingInput">Ejemplo: NACIONAL, INTERNACIONAL, CEPA</label>
       </div>
     </div>
@@ -123,7 +123,6 @@
 </div>
 
 <input type="submit" name="send" class="btn configBtn btn-danger fs-4" value="Enviar">
-<button type="submit" class="btn btn-warning text-white mt-5 fs-5">Seguir ingresando datos</button>
 </form>
 
 

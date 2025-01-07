@@ -7,16 +7,16 @@
     //Envio a la base de datos sobre los los viajes de los motoristas
     if(isset($_POST['send'])){
         if(
-            strlen($_POST['nombreMotorista']) >= 1 &&
-            strlen($_POST['nombreBarco']) >= 1 &&
+            strtoupper($_POST['nombreMotorista']) >= 1 &&
+            strtoupper($_POST['nombreBarco']) >= 1 &&
             strlen($_POST['fecha']) >= 1 &&
-            strlen($_POST['nombreDueñoCamion']) >= 1 &&
+            strtoupper($_POST['nombreDueñoCamion']) >= 1 &&
             strlen($_POST['placaCamion']) >= 1 &&
             strlen($_POST['numeroViaje']) >= 1 &&
-            strlen($_POST['nombreContenedor']) >= 1 &&
+            strtoupper($_POST['nombreContenedor']) >= 1 &&
             strlen($_POST['numeroContenedor']) >= 1 &&
             strlen($_POST['numeroFicha']) >= 1 &&
-            strlen($_POST['tipoDeViaje']) >= 1
+            strtoupper($_POST['tipoDeViaje']) >= 1
         ){
             $Motorista = trim($_POST['nombreMotorista']);
             $Barco = trim($_POST['nombreBarco']);
@@ -29,7 +29,7 @@
             $numFicha= trim($_POST['numeroFicha']);
             $dViaje = trim($_POST['tipoDeViaje']);
             $consulta = "INSERT INTO viajes(nombreMotorista, nombreBarco, fecha, nombreDueñoCamion, placaCamion, numeroViaje, nombreContenedor, numeroContenedor,numeroFicha,tipoDeViaje)
-                VALUES ('$Motorista','$Barco','$fecha','$DueñoCamion','$Camion','$Viaje','$nomContenedor','$numContenedor','$numFicha','$dViaje')";
+                VALUES (UPPER('$Motorista'),UPPER('$Barco'),'$fecha',UPPER('$DueñoCamion'),'$Camion','$Viaje',UPPER('$nomContenedor'),'$numContenedor','$numFicha',UPPER('$dViaje'))";
                 $resultado = mysqli_query($conex, $consulta);
                 if($resultado){
                     ?>

@@ -48,6 +48,7 @@
   font-family: Arial, sans-serif;
   font-size: 15px;
   transition: all 0.3s ease;
+  text-transform: uppercase;
 }
 .configLabel{
   margin-left: 17%;
