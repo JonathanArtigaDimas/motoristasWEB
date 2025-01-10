@@ -30,7 +30,7 @@
     </div>
 
     <div class="carousel-item">
-    <h3 class="text-white text-center mb-5 mt-5 configTextoh3"> Ingrese el nombre del barco</h3>
+    <h3 class="text-white text-center mb-5 mt-5 configTextoh3"> Ingrese el nombre del barco o de el lugar del viaje</h3>
       <div class="form-floating mb-3">
         <input type="text" name="nombreBarco" class="form-control configInput UPtext" id="floatingInput" >
         <label class="configLabel" for="floatingInput">Ejemplo: MSCMONSERRAT, TIFFANY </label>
